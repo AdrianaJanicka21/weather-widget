@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card-body br-style">
+        <form>
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-4">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter a city..."
+                  autofocus
+                  id="citySearchBar"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="mb-3">
+                <input
+                  class="form-control btn btn-secondary"
+                  type="submit"
+                  value="Search"
+                />
+              </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="mb-2">
+                <button
+                  class="btn btn-success w-100"
+                  id="current-location-button"
+                >
+                  Current
+                </button>
+              </div>
+            
+          </div>
+        </form>
+        <br />
+        <div class="col-sm-12">
+          <br />
+        </div>
+        <div class="row">
+          <div class="col-sm-2 g-0">
+            <div class="searchResultIcon leftGrid">
+              ⛅
+            </div>
+          </div>
+
+          <div class="col-sm-3 g-0">
+            <div class="float-left">
+              <span class="temperature" id="temperature">19</span
+              ><span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-sm-3 g-0">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-3 g-0">
+            <div class="searchResultCity rightGrid">
+              <span id="city"> Cork City </span>
+              <div class="searchResultWeather rightGrid">
+                <li id="description"></li>
+                <div class="extraInfo">
+                  Last updated:
+                  <div class="todayDate">
+                    Friday 5:07
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <br />
+          </div>
+          <div class="container">
+            <div class="row weather">
+              <div class="col-3 day">
+                <strong> MON </strong>
+                <br />
+                🌧
+                <br />
+                <strong>16°</strong>|10°C
+              </div>
+              <div class="col-3 day">
+                <strong>TUE</strong>
+                <br />
+                ⛅️
+                <br />
+                <strong>18°</strong>|8°C
+              </div>
+              <div class="col-3 day">
+                <strong>WED</strong>
+                <br />
+                🌧
+                <br />
+                <strong>16°</strong>|14°C
+              </div>
+              <div class="col-3 day">
+                <strong> THU </strong>
+                <br />
+                🌧
+                <br />
+                <strong>16°</strong>|14°C
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="signature">
+      Coded by Adriana Janicka
+    </div>
+
+    <script src="src/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ac786cd348.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

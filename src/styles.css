@@ -1,0 +1,70 @@
+.container {
+  margin: 40px auto;
+  padding: 50px auto;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #000000;
+}
+
+.btn-success {
+  background-color: transparent;
+  color: green;
+  border-color: green;
+}
+
+.btn-success:hover {
+  background-color: green;
+  color: #ffffff;
+}
+
+.searchResultIcon {
+  font-size: 74px;
+  padding-left: 30px;
+}
+.temperature {
+  float: left;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+.searchResultCity {
+  text-align: right;
+  font-weight: bold;
+}
+
+.extraInfo {
+  font-weight: 200;
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.weather {
+  text-align: center;
+}
+
+.weatherIcon {
+  padding-top: 10px;
+}
+
+.temp {
+  font-weight: normal;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.signature {
+  text-align: center;
+  font-size: 12px;
+}
+
+.br-style {
+  border: 1px solid rgba(39, 38, 38, 0.3);
+  border-radius: 15px;
+  box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.21);
+}
